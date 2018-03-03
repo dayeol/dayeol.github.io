@@ -1,0 +1,93 @@
+# User Settings | Edit there as per required
+
+title: Dayeol Lee
+url: "http://dayeol.github.io"
+baseurl: ""
+
+# This will show up at the top of index page
+site_heading: >
+    <span class="font-color">Dayeol</span> Lee
+
+email: dayeol@berkeley.edu
+author: Dayeol Lee
+# This description will show up in google search results
+# (for index page) etc.
+description: >
+    Dayeol Lee, Computer Science Ph.D. student, University of California, Berkeley
+
+# This will what will show against &copy; in the footer
+copyright: dayeol
+# Toggle your short bio, which will displayed on your index page
+# Just toggle it and run jekyll again to see
+intro: true         # Tip: Remove the span from site_heading if intro is set to true
+# This will be displayed in your intro
+short_bio: >
+  I'm a Ph.D. student in Computer Science at <a href="https://adept.eecs.berkeley.edu">ADEPT</a>, <a href="http://berkeley.edu">UC Berkeley</a>.
+        I earned B.S. and M.S. in Computer Science from <a href="http://postech.ac.kr/eng">POSTECH</a>
+
+
+permalink: /blog/:title.html
+
+# Comments are powered by disqus
+comments: true
+
+# keep about_stub roughly 12 words long for best results
+# This will show up at the bottom of each post
+# Note that about_footer should be true if you want
+# to see author information at the bottom of each post
+about_stub: >
+    Large-scale computer systems, hardware/system-level security, neuroscience, and foods.
+    
+
+about_footer: true
+
+twitter_username: "0xda9e01"
+github_username: dayeol
+facebook_id: dayeolee
+
+favicon: false
+favicon_location: "images/favicon.ico"
+
+profile_picture: /images/me.jpg
+paginate: 5
+paginate_path: "/blog/page/:num"
+tracking_id: UA-105695885-1 # GA Tracking ID
+
+# Social Stuff | open graph and twitter cards
+og_image: "images/accent.png" # This will show in facebook thumbnails
+twitter_image: "http://ankitsultana.com/images/accent.png?1234" # This will show in twitter cards
+
+####################################
+####################################
+####################################
+### Build Settings | Don't Touch ###
+####################################
+####################################
+####################################
+
+markdown: kramdown
+
+plugins:
+    - jekyll-paginate
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+# Scopes
+defaults:
+    -
+        scope:
+            path:   ""
+            type:   "pages"
+        values:
+            layout: "default"
+    -
+        scope:
+            path:   ""
+            type:   "posts"
+        values:
+            layout: "post"
+            type: "blog"
+
+exclude: [vendor] # For travis ci

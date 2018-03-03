@@ -1,0 +1,142 @@
+---
+layout: default
+---
+
+<div class="container">
+	<div id="intro">
+		<div id="intro-header">
+			{% if site.profile_picture %}
+			<img id="intro-img" src="{{ site.profile_picture }}">
+			{% endif %}
+			<h2>
+				{% if site.site_heading %}
+				{{ site.site_heading }}
+				{% else %}
+				{{ site.title }}
+				{% endif %}
+			</h2>
+		</div>
+		<p style="margin-top: 30px;">
+		<div class="content">
+			I'm a first-year Ph.D. student in Computer Science at 
+			<a href="http://berkeley.edu">UC Berkeley</a>.
+			I'm in <a href="https://bar.eecs.berkeley.edu">Berkeley Architecture Research Group</a> at
+			<a href="https://adept.eecs.berkeley.edu/">ADEPT Lab</a>, advised by <a href="https://people.eecs.berkeley.edu/~krste/">Krste Asanović</a>.
+			I have earned B.S./M.S. in Computer Science from
+			<a href="http://postech.ac.kr/eng/">POSTECH</a>, advised by
+			<a href="https://hpcs.snu.ac.kr/~jangwoo/">Jangwoo Kim</a>.
+			I'm interested in large-scale computer systems and hardware/system-level security.
+		</div> <!--content-->
+		</p>
+	</div> <!--container-->
+	<div class="content cv">
+		<h3>
+			<span>Education</span>
+		</h3>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				University of California, Berkeley
+			</div>
+			<div class="cv-content">
+				Ph.D. in Computer Science, Aug 2017 - current
+			</div>
+		</div>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				Pohang University of Science and Technology, South Korea
+			</div>
+			<div class="cv-content">
+				M.S. in Computer Science and Engineering, Mar 2016 - Aug 2017
+			</div>
+		</div>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				Pohang University of Science and Technology, South Korea
+			</div>
+			<div class="cv-content">
+				B.S. in Computer Science and Engineering, Mar 2009 - Feb 2016
+			</div>
+		</div>
+
+		<!--
+		<h3>
+		<span>Publication</span>
+		</h3
+		-->
+
+		<h3>
+			<span>Experience</span>
+		</h3>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				Penta Security Systems Inc., South Korea
+			</div>
+			<div class="cv-content">
+				System/Software Engineer, Apr 2013 - Jan 2015
+			</div>
+		</div>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				WINS Co. Ltd., South Korea
+			</div>
+			<div class="cv-content">
+				Network Security Researcher, Mar 2012 - Apr 2013
+			</div>
+		</div>
+
+		<h3>
+			<span>Honors & Awards</span>
+		</h3>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				Kwanjeong Ph.D. Scholarship
+			</div>
+			<div class="cv-content">
+				Kwanjeong Educational Foundation, Financial Aid, Aug 2017 - Jul 2021
+			</div>
+		</div>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				Undergraduate Research Program (URP) Fellowship
+			</div>
+			<div class="cv-content">
+				POSTECH, Financial Aid/Award of Excellence, Jun 2015 - Nov 2015
+			</div>
+		</div>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				National Science & Technology Scholarship
+			</div>
+			<div class="cv-content">
+				Korea Student Aid Foundation, Financial Aid, Mar 2015 - Feb 2016
+			</div>
+		</div>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				Samsung JFL Scholarship
+			</div>
+			<div class="cv-content">
+				Samsung Electronics, Financial Aid, Mar 2008 - Feb 2011
+			</div>
+		</div>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				DEFCON CTF World Final, Las Vegas
+			</div>
+			<div class="cv-content">
+				3rd place, Aug 2010
+			</div>
+		</div>
+
+	</div>
+</div>
