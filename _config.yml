@@ -45,7 +45,7 @@ twitter_username: "0xda9e01"
 github_username: dayeol
 facebook_id: dayeolee
 
-favicon: false
+favicon: true
 favicon_location: "images/favicon.ico"
 
 profile_picture: /images/me.jpg
@@ -54,8 +54,8 @@ paginate_path: "/blog/page/:num"
 tracking_id: UA-105695885-1 # GA Tracking ID
 
 # Social Stuff | open graph and twitter cards
-og_image: "images/accent.png" # This will show in facebook thumbnails
-twitter_image: "http://ankitsultana.com/images/accent.png?1234" # This will show in twitter cards
+og_image: "images/me.jpg" # This will show in facebook thumbnails
+#twitter_image: "http://ankitsultana.com/images/accent.png?1234" # This will show in twitter cards
 
 ####################################
 ####################################
