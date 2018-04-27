@@ -206,20 +206,22 @@ footer {
     width: 100%;
     margin: $base-spacing 0;
     .post-title {
+				width:100%;
         font-size: 25px;
     }
     .post-time {
+				width:100%;
         color: $light-color;
     }
     @media (max-width: $break-medium) {
         .post-time {
             margin-top: $base-spacing/2;
             display: block;
-            float: none;
+						width: 100%;
         }
         .post-title {
             display: block;
-            float: none;
+						width: 100%;
         }
         margin: $base-spacing*1.1 0;
     }
