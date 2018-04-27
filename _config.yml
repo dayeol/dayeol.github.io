@@ -67,7 +67,9 @@ og_image: "images/me.jpg" # This will show in facebook thumbnails
 
 markdown: kramdown
 
-plugins:
+plugins_dir: _plugins
+ 
+gems:
     - jekyll-paginate
 
 sass:
