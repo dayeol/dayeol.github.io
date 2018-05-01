@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Dayeol Lee
-title: "[Project] Open-Source Secure Enclave on RISC-V Infrastructure"
+title: "Keystone: An Open-Source Secure Enclave on the RISC-V Architecture"
 ---
 
 # What I am doing?
@@ -16,8 +16,4 @@ until today. The goal of this project is to make TEE accessible to everyone in t
 and the academia in order to build an open standard for secure enclave design,
 which is applicable to a wide range of threat models.
 
-This project is currently led by research groups of CSAIL at MIT and EECS at UC Berkeley:  
-Ilia Lebedev (MIT), Srini Devadas (MIT), Dayeol Lee (UC Berkeley), Krste Asanovic (UC Berkeley), and
-Dawn Song (UC Berkeley).
-
-Project Website: (coming soon!)
+Project Website: [Keystone Project](https://keystone-enclave.github.io)
