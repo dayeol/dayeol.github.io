@@ -71,6 +71,7 @@ plugins_dir: _plugins
  
 gems:
     - jekyll-paginate
+    - jekyll-octicons
 
 sass:
     style: compressed
