@@ -1,0 +1,73 @@
+- year: 2020
+  papers:
+  - venue: "USENIX Security'20" 
+    title: "An Off-Chip Attack on Hardware Enclaves via the Memory Bus"
+    authors: "Dayeol Lee, Dongha Jung, Ian T. Fang, Chia-Che Tsai, and Raluca Ada Popa"
+    fullvenue: "In proceedings of the 29th USENIX Security Symposium, Boston, MA"
+    date: "August 2020 (To Appear)"
+    badges:
+      - conference
+      - selected
+  - venue: "EuroSys'20"
+    title: "Keystone: An Open Framework for Architecting Trusted Execution Environments"
+    authors: "Dayeol Lee, David Kohlbrenner, Shweta Shinde, Dawn Song, and Krste Asanovic"
+    fullvenue: "In proceedings of the 15th European Conference on Computer Systems, Heraklion, Greece"
+    date: "April 2020 (To Appear)"
+    badges: 
+      - conference
+      - selected
+  - venue: "SECRISC-V"
+    title: "Verifying RISC-V Physical Memory Protection"
+    authors: "Kevin Cheang, Cameron Rasmussen, Dayeol Lee, David W. Kohlbrenner, Krste Asanovic, Sanjit A. Seshia"
+    fullvenue: "International Workshop on Secure RISC-V co-located with ISPASS'20"
+    date: "April 2020 (To Appear)"
+    badges:
+      - workshop
+- year: 2019
+  papers:
+  - venue: "DATE'19"
+    title: "Sanctorum: A Lightweight Security Monitor for Secure Enclaves"
+    authors: "Ilia Lebedev, Kyle Hogan, Jules Drean, David Kohlbrenner, Dayeol Lee, Krste Asanović, Dawn Song, and Srini Devadas"
+    fullvenue: "Design, Automation, and Test in Europe"
+    date: "February 2019"
+    badges: 
+      - conference
+  - venue: "IEEE Micro Top Picks 2018" 
+    title: "FireSim: FPGA-Accelerated Cycle-Exact Scale-Out System Simulation in the Public Cloud"
+    authors: "Sagar Karandikar, Howard Mao, Donggyu Kim, David Biancolin, Alon Amid \
+              Dayeol Lee \
+              Nathan Pemberton, Emmanuel Amaro, Colin Schmidt, Aditya Chopra, Qijing Huang, Kyle Kovacs, \
+              Borivoje Nikolic, Randy Katz, Jonathan Bachrach, and Krste Asanovic"
+    fullvenue: "In IEEE Micro, Volume 39 , Issue 3, May-June 2019 (Special Issue: Top Picks from the 2018 Computer Architecture Conferences)"
+    date: "May-June 2019" 
+    badges:
+      - journal
+- year: 2018
+  papers:
+  - venue: "ISCA'18"
+    title: "FireSim: FPGA-Accelerated Cycle-Exact Scale-Out System Simulation in the Public Cloud"
+    authors: "Sagar Karandikar, Howard Mao, Donggyu Kim, David Biancolin, Alon Amid \
+              Dayeol Lee \
+              Nathan Pemberton, Emmanuel Amaro, Colin Schmidt, Aditya Chopra, Qijing Huang, Kyle Kovacs, \
+              Borivoje Nikolic, Randy Katz, Jonathan Bachrach, and Krste Asanovic"
+    fullvenue: "In proceedings of the 45th International Symposium on Computer Architecture (ISCA), Los Angeles, CA"
+    date: "June 2018"
+    badges:
+      - conference
+  - venue: "ISCA'18"
+    title: "Flexon: A Flexible Digital Neuron for Efficient Spiking Neural Network Simulations"
+    authors: "Dayeol Lee, Gwangmu Lee, Dongup Kwon, Sunghwa Lee, Youngsok Kim, and Jangwoo Kim"
+    fullvenue: "In proceedings of the 45th International Symposium on Computer Architecture (ISCA), Los Angeles, CA"
+    date: "June 2018"
+    badges:
+      - conference
+      - selected
+- year: 2017
+  papers:
+  - venue: "M.S. Thesis"
+    title: "Low-power Spiking Neuron Microarchitecture"
+    authors: "Dayeol Lee (Advisor: Jangwoo Kim)"
+    fullvenue: "M.S. Thesis, Pohang University of Science and Technology, South Korea"
+    date: "August 2017"
+    badges:
+      - selected

@@ -48,7 +48,7 @@ facebook_id: dayeolee
 favicon: true
 favicon_location: "images/favicon.ico"
 
-profile_picture: /images/me.jpg
+profile_picture: /images/me.png
 paginate: 5
 paginate_path: "/blog/page/:num"
 tracking_id: UA-105695885-1 # GA Tracking ID

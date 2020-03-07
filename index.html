@@ -21,8 +21,18 @@ layout: default
 			I'm a third-year Ph.D. student in Computer Science at 
 			<a href="http://berkeley.edu">UC Berkeley</a>.
 			I work in <a href="https://bar.eecs.berkeley.edu">Berkeley Architecture Research</a> group in
-			the <a href="https://adept.eecs.berkeley.edu/">ADEPT Lab</a>, advised by <a href="https://people.eecs.berkeley.edu/~krste/">Krste Asanović</a>.
-			I'm also working with <a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a> and <a href="https://people.eecs.berkeley.edu/~raluca/">Raluca Ada Popa</a> in the <a href="http://rise.cs.berkeley.edu">RISE Lab</a>.
+			the <a href="https://adept.eecs.berkeley.edu/">ADEPT Lab</a>, 
+			advised by <a href="https://people.eecs.berkeley.edu/~krste/">Krste Asanović</a>.
+			<br/>I'm also afilliated with  
+			the <a href="http://rise.cs.berkeley.edu">RISE Lab</a>
+			and closely working with 
+			<a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a>,
+			<a href="https://people.eecs.berkeley.edu/~sseshia/">Sanjit Seshia</a>, and
+			<a href="https://people.eecs.berkeley.edu/~raluca/">Raluca Ada Popa</a>.
+			<br/>
+			My research interest is hardware security, trusted execution environment, computer
+			architecture, and formal
+			verification.
 			I'm currently working on <a href="https://keystone-enclave.org">Keystone</a> project.
 			<br/>
 			I have earned B.S./M.S. in Computer Science from
@@ -67,67 +77,39 @@ layout: default
 		<h3>
 			<span>Publications</span>
 		</h3>
-		
-		<div class="cv-item" itemscope itemtype="http://schema.org/PublicationEvent">
-			<div class="cv-title">
-				<b itemprop="organizer">[EuroSys'20]</b> <b itemprop="name">Keystone: An Open Framework for
-				Architecting TEEs</b>
-				<br/>
-				<u itemprop="contributor">Dayeol Lee</u>, David Kohlbrenner, Shweta Shinde, Dawn Song, and
-				Krste Asanovic
-			</div>
-			<div class="cv-content" itemprop="publishedBy">
-				In proceedings of the 15th European Conference on Computer Systems, Heraklion, Greece, April
-				2020 (To Appear)
-			</div>
-		</div>
 
-		<div class="cv-item" itemscope itemtype="http://schema.org/PublicationEvent">
-			<div class="cv-title">
-				<b itemprop="organizer">[USENIX Security'20]</b> <b itemprop="name">An Off-Chip Attack on Hardware Enclaves via the Memory Bus</b>
-				<br/>
-				<u itemprop="contributor">Dayeol Lee</u>, Dongha Jung, Ian T. Fang, Chia-Che Tsai, and
-				Raluca Ada Popa
+		{% for year in site.data.publications %}
+			<h6>{{year.year}}</h6>
+			{% for paper in year.papers %}
+			<div class="cv-item" itemscope itemtype="http://schema.org/PublicationEvent">
+				<div class="cv-title">
+					
+					{% for b in paper.badges %}
+						{% if b == "conference" %}
+							<span class="badge badge-success">Conference</span>
+						{% endif %}
+						{% if b == "workshop" %}
+							<span class="badge badge-secondary">Workshop</span>
+						{% endif %}
+						{% if b == "selected" %}
+							<span class="badge badge-danger">Selected</span>
+						{% endif %}
+						{% if b == "journal" %}
+							<span class="badge badge-warning">Journal</span>
+						{% endif %}
+					{% endfor %}
+					<br/>
+					<b itemprop="organizer">[{{paper.venue}}]</b> <b itemprop="name">{{paper.title}}</b>
+					<br/>
+					{{ paper.authors | replace: "Dayeol Lee", "<u itemprop=contributor>Dayeol Lee</u>" }}
+				</div>
+				<div class="cv-content" itemprop="publishedBy">
+					{{ paper.fullvenue }}{% if paper.date %}, {{paper.date}}{% endif %}
+			
+				</div>
 			</div>
-			<div class="cv-content" itemprop="publishedBy">
-				In proceedings of the 29th USENIX Security Symposium, Boston, MA, August 2020 (To Appear)
-			</div>
-		</div>
-
-		<div class="cv-item" itemscope itemtype="http://schema.org/PublicationEvent">
-			<div class="cv-title">
-				<b itemprop="organizer">[ISCA'18]</b> <b itemprop="name">Flexon: A Flexible Digital Neuron for Efficient Spiking Neural Network Simulations</b>
-				<br/>
-				<u itemprop="contributor">Dayeol Lee</u>, Gwangmu Lee, Dongup Kwon, Sunghwa Lee, Youngsok Kim, and Jangwoo Kim
-			</div>
-			<div class="cv-content" itemprop="publishedBy">
-				In proceedings of the 45th International Symposium on Computer Architecture (ISCA), Los Angeles, CA, June 2018 
-			</div>
-		</div>
-		<div class="cv-item" itemscope itemtype="http://schema.org/PublicationEvent">
-			<div class="cv-title">
-				<b itemprop="organizer">[ISCA'18]</b><b itemprop="name"> FireSim: FPGA-Accelerated Cycle-Exact Scale-Out System Simulation in the Public Cloud</b>
-				<br/>
-				Sagar Karandikar, Howard Mao, Donggyu Kim, David Biancolin, Alon Amid, <u
-					itemprop="contributor">Dayeol Lee</u>, Nathan
-				Pemberton, Emmanuel Amaro, Colin Schmidt, Aditya Chopra, Qijing Huang, Kyle Kovacs, Borivoje
-				Nikolic, Randy Katz, Jonathan Bachrach, and Krste Asanović.
-			</div>
-			<div class="cv-content" itemprop="publishedBy">
-				In proceedings of the 45th International Symposium on Computer Architecture (ISCA), Los Angeles, CA, June 2018
-			</div>
-		</div>
-		<div class="cv-item" itemscope itemtype="http://schema.org/PublicationEvent">
-			<div class="cv-title">
-				<b>[M.S. Thesis]</b><b itemprop="name"> Low-power Spiking Neuron Microarchitecture</b>
-				<br><u itemprop="contributor">Dayeol Lee</u> (Advisor: Jangwoo Kim)
-			</div>
-			<div class="cv-content" itemprop="description">
-				M.S. Thesis, Pohang University of Science and Technology, South Korea, August 2018
-			</div>
-		</div>
-
-
+			{% endfor %}
+		{% endfor %}
 
 		<h3>
 			<span>Experience</span>
