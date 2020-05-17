@@ -8,21 +8,28 @@
     badges:
       - conference
       - selected
+  - venue: "SECRISC-V'20"
+    title: "Verifying RISC-V Physical Memory Protection"
+    authors: "Kevin Cheang, Cameron Rasmussen, Dayeol Lee, David W. Kohlbrenner, Krste Asanovic, Sanjit A. Seshia"
+    fullvenue: "International Workshop on Secure RISC-V co-located with ISPASS'20"
+    date: "August 2020 (To Appear)"
+    badges:
+      - workshop
+  - venue: "CARRV'20"
+    title: "Software-Based Off-Chip Memory Protection for RISC-V Trusted Execution Environments"
+    authors: "Gui Andrade, Dayeol Lee, David Kohlbrenner, Krste Asanovic, Dawn Song"
+    fullvenue: "Fourth Workshop on Computer Architecture Research with RISC-V co-located with ISCA'20"
+    date: "May 2020 (To Appear)"
+    badges:
+      - workshop
   - venue: "EuroSys'20"
     title: "Keystone: An Open Framework for Architecting Trusted Execution Environments"
     authors: "Dayeol Lee, David Kohlbrenner, Shweta Shinde, Dawn Song, and Krste Asanovic"
     fullvenue: "In proceedings of the 15th European Conference on Computer Systems, Heraklion, Greece"
-    date: "April 2020 (To Appear)"
+    date: "April 2020"
     badges: 
       - conference
       - selected
-  - venue: "SECRISC-V"
-    title: "Verifying RISC-V Physical Memory Protection"
-    authors: "Kevin Cheang, Cameron Rasmussen, Dayeol Lee, David W. Kohlbrenner, Krste Asanovic, Sanjit A. Seshia"
-    fullvenue: "International Workshop on Secure RISC-V co-located with ISPASS'20"
-    date: "April 2020 (To Appear)"
-    badges:
-      - workshop
 - year: 2019
   papers:
   - venue: "DATE'19"

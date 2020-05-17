@@ -38,9 +38,7 @@ body {
 * * * * * * * * * * * */
 .cv { 
 	h3 {
-		padding-top: 10px
-	}
-	span {
+		padding-top: 10px;
 		border-bottom: 2px solid $underline-color;
 	}
 	::selection {
@@ -121,8 +119,7 @@ a {
     color: inherit;
     padding: 0;
 }
-
-.content a:link, a:visited {
+.content a:link, .content a:visited {
 	border-bottom: 0.5px dashed $light-color;
 }
 .content a:hover {

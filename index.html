@@ -38,6 +38,13 @@ layout: default
 			I have earned B.S./M.S. in Computer Science from
 			<a href="http://postech.ac.kr/eng/">POSTECH</a>, advised by
 			<a href="https://hpcs.snu.ac.kr/~jangwoo/">Jangwoo Kim</a>.
+			<br/><br/>
+		</div> <!--content-->
+		<div>  
+			Contact: dayeol [at] berkeley [dot] edu
+			<br/><br/>
+			<a class="btn btn-outline-dark btn-sm" href="https://scholar.google.com/citations?user=DFdY-fsAAAAJ">Google Scholar</a>
+			<a class="btn btn-outline-dark btn-sm" href="https://github.com/dayeol">GitHub</a>
 		</div> <!--content-->
 		</p>
 	</div> <!--container-->
@@ -78,10 +85,56 @@ layout: default
 			<span>Publications</span>
 		</h3>
 
+		<div class="pubbtns">
+		<span id="pubAll" class="btn btn-dark btn-sm">All</span>
+		<span id="pubSelected" class="btn btn-outline-danger btn-sm">Selected</span>
+		<span id="pubConference" class="btn btn-outline-success btn-sm">Conference</span>
+		<span id="pubWorkshop" class="btn btn-outline-secondary btn-sm">Workshop</span>
+		<span id="pubJournal" class="btn btn-outline-warning btn-sm">Journal</span>
+		</div>
+		<script>
+			function disableAllButOne(str) {
+				for (cl of ["dark","success","secondary","danger","warning"]) {
+					$(".pubbtns > .btn-"+cl).removeClass("btn-"+cl).addClass("btn-outline-"+cl);
+				}
+				$(".pubbtns > .btn-outline-"+str).removeClass("btn-outline-"+str).addClass("btn-"+str);
+			}
+			$("#pubAll").click(function() {
+				disableAllButOne("dark");
+				$(".pub-item").show();
+			});
+
+			$("#pubConference").click(function() {
+				disableAllButOne("success");
+				$(".pub-item").hide();
+				$(".pub-conference").show();
+			});
+			
+			$("#pubWorkshop").click(function() {
+				disableAllButOne("secondary");
+				$(".pub-item").hide();
+				$(".pub-workshop").show();
+			});
+
+			$("#pubSelected").click(function() {
+				disableAllButOne("danger");
+				$(".pub-item").hide();
+				$(".pub-selected").show();
+			});
+
+			$("#pubJournal").click(function() {
+				disableAllButOne("warning");
+				$(".pub-item").hide();
+				$(".pub-journal").show();
+			});
+		</script>
+
 		{% for year in site.data.publications %}
 			<h6>{{year.year}}</h6>
 			{% for paper in year.papers %}
-			<div class="cv-item" itemscope itemtype="http://schema.org/PublicationEvent">
+			<div class="cv-item pub-item  
+			{% for b in paper.badges %} pub-{{ b }} {% endfor %}
+				" itemscope itemtype="http://schema.org/PublicationEvent">
 				<div class="cv-title">
 					
 					{% for b in paper.badges %}
@@ -114,6 +167,15 @@ layout: default
 		<h3>
 			<span>Experience</span>
 		</h3>
+
+		<div class="cv-item">
+			<div class="cv-title">
+				<b>Intel Labs, Hillsboro, OR</b>
+			</div>
+			<div class="cv-content">
+				Graduate Research Intern, May 2020 - current
+			</div>
+		</div>
 
 		<div class="cv-item">
 			<div class="cv-title">
