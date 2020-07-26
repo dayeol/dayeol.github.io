@@ -15,11 +15,18 @@
     date: "August 2020 (To Appear)"
     badges:
       - workshop
+  - venue: "S&P Magazine"
+    title: "Building Open Trusted Execution Environments"
+    authors: "David Kohlbrenner, Shweta Shinde, Dayeol Lee, Krste Asanovic, Dawn Song"
+    fullvenue: "IEEE Security & Privacy Magazine"
+    date: "May 2020"
+    badges:
+      - journal
   - venue: "CARRV'20"
     title: "Software-Based Off-Chip Memory Protection for RISC-V Trusted Execution Environments"
     authors: "Gui Andrade, Dayeol Lee, David Kohlbrenner, Krste Asanovic, Dawn Song"
     fullvenue: "Fourth Workshop on Computer Architecture Research with RISC-V co-located with ISCA'20"
-    date: "May 2020 (To Appear)"
+    date: "May 2020"
     badges:
       - workshop
   - venue: "EuroSys'20"

@@ -52,64 +52,31 @@ layout: default
 			<span>Education</span>
 		</h3>
 
+		{% for item in site.data.education %}
 		<div class="cv-item">
 			<div class="cv-title">
-				<b>University of California, Berkeley, CA</b>
+				<b>{{ item.name }}</b>
 			</div>
 			<div class="cv-content">
-				Ph.D. in Computer Science, Aug 2017 - current
+				{{ item.content }}
 			</div>
 		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>Pohang University of Science and Technology, South Korea</b>
-			</div>
-			<div class="cv-content">
-				M.S. in Computer Science and Engineering, Mar 2016 - Aug 2017
-			</div>
-		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>Pohang University of Science and Technology, South Korea</b>
-			</div>
-			<div class="cv-content">
-				B.S. in Computer Science and Engineering, Mar 2009 - Feb 2016
-			</div>
-		</div>
+		{% endfor %}
 
 		<h3>
 			<span>Experience</span>
 		</h3>
 
+		{% for item in site.data.experiences %}
 		<div class="cv-item">
 			<div class="cv-title">
-				<b>Intel Labs, Hillsboro, OR</b>
+				<b>{{ item.name }}</b>
 			</div>
 			<div class="cv-content">
-				Graduate Research Intern, May 2020 - current
+				{{ item.content }}
 			</div>
 		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>Penta Security Systems Inc., South Korea</b>
-			</div>
-			<div class="cv-content">
-				System/Software Engineer, Apr 2013 - Jan 2015
-			</div>
-		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>WINS Co. Ltd., South Korea</b>
-			</div>
-			<div class="cv-content">
-				Network Security Researcher, Mar 2012 - Apr 2013
-			</div>
-		</div>
-
+		{% endfor %}
 		
 		<h3>
 			<span>Publications</span>
@@ -199,50 +166,16 @@ layout: default
 			<span>Honors & Awards</span>
 		</h3>
 
+		{% for item in site.data.awards %}
 		<div class="cv-item">
 			<div class="cv-title">
-				<b>Kwanjeong Ph.D. Scholarship</b>
+				<b>{{ item.name }}</b>
 			</div>
 			<div class="cv-content">
-				Kwanjeong Educational Foundation, Financial Aid, Aug 2017 - Jul 2021
+				{{ item.content }}
 			</div>
 		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>Undergraduate Research Program (URP) Fellowship</b>
-			</div>
-			<div class="cv-content">
-				POSTECH, Financial Aid/Award of Excellence, Jun 2015 - Nov 2015
-			</div>
-		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>National Science & Technology Scholarship</b>
-			</div>
-			<div class="cv-content">
-				Korea Student Aid Foundation, Financial Aid, Mar 2015 - Feb 2016
-			</div>
-		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>Samsung JFL Scholarship</b>
-			</div>
-			<div class="cv-content">
-				Samsung Electronics, Financial Aid, Mar 2008 - Feb 2011
-			</div>
-		</div>
-
-		<div class="cv-item">
-			<div class="cv-title">
-				<b>DEFCON CTF World Final, Las Vegas</b>
-			</div>
-			<div class="cv-content">
-				3rd place, Aug 2010
-			</div>
-		</div>
+		{% endfor %}
 
 	</div>
 </div>
