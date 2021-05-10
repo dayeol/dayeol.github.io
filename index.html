@@ -88,11 +88,10 @@ layout: default
 		<span id="pubConference" class="btn btn-outline-success btn-sm">Conference</span>
 		<span id="pubWorkshop" class="btn btn-outline-secondary btn-sm">Workshop</span>
 		<span id="pubJournal" class="btn btn-outline-warning btn-sm">Journal</span>
-		<span id="pubPatent" class="btn btn-outline-info btn-sm">Patent</span>
 		</div>
 		<script>
 			function disableAllButOne(str) {
-				for (cl of ["dark","success","secondary","danger","warning", "info"]) {
+				for (cl of ["dark","success","secondary","danger","warning"]) {
 					$(".pubbtns > .btn-"+cl).removeClass("btn-"+cl).addClass("btn-outline-"+cl);
 				}
 				$(".pubbtns > .btn-outline-"+str).removeClass("btn-outline-"+str).addClass("btn-"+str);
@@ -125,12 +124,6 @@ layout: default
 				$(".pub-item").hide();
 				$(".pub-journal").show();
 			});
-
-      $("#pubPatent").click(function() {
-				disableAllButOne("info");
-				$(".pub-item").hide();
-				$(".pub-patent").show();
-			});
 		</script>
 
 		{% for year in site.data.publications %}
@@ -153,9 +146,6 @@ layout: default
 						{% endif %}
 						{% if b == "journal" %}
 							<span class="badge badge-warning">Journal</span>
-						{% endif %}
-						{% if b == "patent" %}
-						  <span class="badge badge-info">Patent</span>
 						{% endif %}
 					{% endfor %}
 					<br/>
