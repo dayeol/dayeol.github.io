@@ -1,10 +1,19 @@
+- year: 2021
+  papers:
+  - venue: "US Patent"
+    title: "Scalabe Attestation for Trusted Execution Environments"
+    authors: "Anjo Lucas Vahldiek-Oberwagner, Ravi L Sahita, Mona Vij, Dayeol Lee, Haidong Xia, Rameshkumar Illikkal, Samuel Ortiz, Kshitij Arun Doshi, Mourad Cherfaoui, Andrzej Kuriata, Teck Joo Goh"
+    fullvenue: "US Patent"
+    date: "April 2021"
+    badges:
+      - patent
 - year: 2020
   papers:
   - venue: "USENIX Security'20" 
     title: "An Off-Chip Attack on Hardware Enclaves via the Memory Bus"
     authors: "Dayeol Lee, Dongha Jung, Ian T. Fang, Chia-Che Tsai, and Raluca Ada Popa"
     fullvenue: "In proceedings of the 29th USENIX Security Symposium, Boston, MA"
-    date: "August 2020 (To Appear)"
+    date: "August 2020"
     badges:
       - conference
       - selected
@@ -12,7 +21,7 @@
     title: "Verifying RISC-V Physical Memory Protection"
     authors: "Kevin Cheang, Cameron Rasmussen, Dayeol Lee, David W. Kohlbrenner, Krste Asanovic, Sanjit A. Seshia"
     fullvenue: "International Workshop on Secure RISC-V co-located with ISPASS'20"
-    date: "August 2020 (To Appear)"
+    date: "August 2020"
     badges:
       - workshop
   - venue: "S&P Magazine"
