@@ -69,7 +69,7 @@ markdown: kramdown
 
 plugins_dir: _plugins
  
-gems:
+plugins:
     - jekyll-paginate
     - jekyll-octicons
 
