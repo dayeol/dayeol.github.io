@@ -1,5 +1,29 @@
+- year: 2022
+  papers:
+  - venue: "CCS'22"
+    title: "A Formal Approach to Secure and Efficient Enclave Memory Sharing (to appear)"
+    authors: "Dayeol Lee, Kevin Cheang, Alexander Thomas, Catherine Lu, Pranav Gaddamadugu, Anjo Vahldiek-Oberwagner, Mona Vij, Dawn Song, Sanjit A. Seshia, and Krste Asanovic"
+    fullvenue: "The ACM Conference on Computer and Communications Security"
+    date: "November 2022"
+    badges:
+      - conference
+      - selected
+  - venue: "Ph.D. Dissertation"
+    title: "Building Trusted Execution Environments"
+    authors: "Dayeol Lee (Chair: Krste Asanovic)"
+    fullvenue: "Ph.D. Dissertation, Electrical Engineering and Computer Sciences University of California, Berkeley"
+    date: "May 2022"
+    badges:
+      - selected
 - year: 2021
   papers:
+  - venue: "CARRV'21"
+    title: "ERTOS: Enclaves in Real-Time Operating Systems"
+    authors: "Alex Thomas, Stephan Kaminsky, Dayeol Lee, Dawn Song, and Krste Asanovic"
+    fullvenue: "Fifth Workshop on Computer Architecture Research with RISC-V co-located with ISCA'21"
+    date: "June 2021"
+    badges:
+      - workshop
   - venue: "US Patent"
     title: "Scalabe Attestation for Trusted Execution Environments"
     authors: "Anjo Lucas Vahldiek-Oberwagner, Ravi L Sahita, Mona Vij, Dayeol Lee, Haidong Xia, Rameshkumar Illikkal, Samuel Ortiz, Kshitij Arun Doshi, Mourad Cherfaoui, Andrzej Kuriata, Teck Joo Goh"
@@ -9,7 +33,7 @@
       - patent
 - year: 2020
   papers:
-  - venue: "USENIX Security'20" 
+  - venue: "USENIX Security'20"
     title: "An Off-Chip Attack on Hardware Enclaves via the Memory Bus"
     authors: "Dayeol Lee, Dongha Jung, Ian T. Fang, Chia-Che Tsai, and Raluca Ada Popa"
     fullvenue: "In proceedings of the 29th USENIX Security Symposium, Boston, MA"
@@ -43,7 +67,7 @@
     authors: "Dayeol Lee, David Kohlbrenner, Shweta Shinde, Dawn Song, and Krste Asanovic"
     fullvenue: "In proceedings of the 15th European Conference on Computer Systems, Heraklion, Greece"
     date: "April 2020"
-    badges: 
+    badges:
       - conference
       - selected
 - year: 2019
@@ -53,16 +77,16 @@
     authors: "Ilia Lebedev, Kyle Hogan, Jules Drean, David Kohlbrenner, Dayeol Lee, Krste Asanović, Dawn Song, and Srini Devadas"
     fullvenue: "Design, Automation, and Test in Europe"
     date: "February 2019"
-    badges: 
+    badges:
       - conference
-  - venue: "IEEE Micro Top Picks 2018" 
+  - venue: "IEEE Micro Top Picks 2018"
     title: "FireSim: FPGA-Accelerated Cycle-Exact Scale-Out System Simulation in the Public Cloud"
     authors: "Sagar Karandikar, Howard Mao, Donggyu Kim, David Biancolin, Alon Amid \
               Dayeol Lee \
               Nathan Pemberton, Emmanuel Amaro, Colin Schmidt, Aditya Chopra, Qijing Huang, Kyle Kovacs, \
               Borivoje Nikolic, Randy Katz, Jonathan Bachrach, and Krste Asanovic"
     fullvenue: "In IEEE Micro, Volume 39 , Issue 3, May-June 2019 (Special Issue: Top Picks from the 2018 Computer Architecture Conferences)"
-    date: "May-June 2019" 
+    date: "May-June 2019"
     badges:
       - journal
 - year: 2018
