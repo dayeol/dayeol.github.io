@@ -18,28 +18,29 @@ layout: default
 		</div>
 		<p style="margin-top: 30px;">
 		<div class="content">
-			I'm a Ph.D. candidate in Computer Science at 
+			I'm a Research Scientist at TikTok Privacy Innovation Lab.
+			My research interest is system security, trusted execution environment, computer
+			architecture, and formal verification.
+			Before I joined TikTok, I was a Software Engineer at Anyscale Inc.
+			I finished my Ph.D. in Computer Sciense at
 			<a href="http://berkeley.edu">UC Berkeley</a>.
-			I work in <a href="https://bar.eecs.berkeley.edu">Berkeley Architecture Research</a> group in
-			the <a href="https://adept.eecs.berkeley.edu/">ADEPT Lab</a>, 
+			I was a part of <a href="https://bar.eecs.berkeley.edu">Berkeley Architecture Research</a> group in
+			the <a href="https://adept.eecs.berkeley.edu/">ADEPT Lab</a>,
 			advised by <a href="https://people.eecs.berkeley.edu/~krste/">Krste Asanović</a>.
 			<br/>
-			I also closely work with 
+			I also closely worked with
 			<a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a>,
 			<a href="https://people.eecs.berkeley.edu/~sseshia/">Sanjit Seshia</a>, and
 			<a href="https://people.eecs.berkeley.edu/~raluca/">Raluca Ada Popa</a>.
 			<br/>
-			My research interest is system security, trusted execution environment, computer
-			architecture, and formal
-			verification.
 			<br/><br/>
-			Before staring Ph.D., I have earned B.S./M.S. in Computer Science from
+			I have also earned B.S./M.S. in Computer Science from
 			<a href="http://postech.ac.kr/eng/">POSTECH</a>, advised by
 			<a href="https://hpcs.snu.ac.kr/~jangwoo/">Jangwoo Kim</a>.
 			<br/><br/>
-			I'm currently working on <a href="https://keystone-enclave.org">Keystone</a> project.
+			I'm a maintainer of <a href="https://keystone-enclave.org">Keystone</a> project.
 		</div> <!--content-->
-		<div>  
+		<div>
 			Contact: dayeol [at] berkeley [dot] edu
 			<br/><br/>
 			<a class="btn btn-outline-dark btn-sm" href="https://scholar.google.com/citations?user=DFdY-fsAAAAJ">Google Scholar</a>
@@ -77,7 +78,7 @@ layout: default
 			</div>
 		</div>
 		{% endfor %}
-		
+
 		<h3>
 			<span>Publications</span>
 		</h3>
@@ -107,7 +108,7 @@ layout: default
 				$(".pub-item").hide();
 				$(".pub-conference").show();
 			});
-			
+
 			$("#pubWorkshop").click(function() {
 				disableAllButOne("secondary");
 				$(".pub-item").hide();
@@ -136,11 +137,11 @@ layout: default
 		{% for year in site.data.publications %}
 			<h6>{{year.year}}</h6>
 			{% for paper in year.papers %}
-			<div class="cv-item pub-item  
+			<div class="cv-item pub-item
 			{% for b in paper.badges %} pub-{{ b }} {% endfor %}
 				" itemscope itemtype="http://schema.org/PublicationEvent">
 				<div class="cv-title">
-					
+
 					{% for b in paper.badges %}
 						{% if b == "conference" %}
 							<span class="badge badge-success">Conference</span>
@@ -165,13 +166,13 @@ layout: default
 				</div>
 				<div class="cv-content" itemprop="publishedBy">
 					{{ paper.fullvenue }}{% if paper.date %}, {{paper.date}}{% endif %}
-			
+
 				</div>
 			</div>
 			{% endfor %}
 		{% endfor %}
 
-		
+
 		<h3>
 			<span>Honors & Awards</span>
 		</h3>
